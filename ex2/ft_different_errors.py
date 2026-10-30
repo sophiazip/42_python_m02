@@ -12,7 +12,7 @@ def garden_operations(operation_number: int) -> None:
         with open("/non/existent/file", "r", encoding="utf-8"):
             pass
     elif operation_number == 3:
-        _ = "garden" + 1
+        _ = "garden" + 1  # type: ignore
 
 
 def test_error_types() -> None:
